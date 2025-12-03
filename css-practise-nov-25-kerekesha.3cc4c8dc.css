@@ -41,8 +41,6 @@ body {
 
 .person__avatar {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
 }
 
 .person__photo {
@@ -65,10 +63,6 @@ body {
   right: 5%;
 }
 
-.person__extra {
-  display: none;
-}
-
 .person__details {
   text-align: center;
   color: #2f4f4f;
@@ -81,6 +75,10 @@ body {
   font-size: 20px;
   font-weight: 700;
   display: inline-block;
+}
+
+.person__extra {
+  opacity: 0;
 }
 
 .people {
@@ -98,28 +96,19 @@ body {
 }
 
 .people__person {
-  transition: opacity 1s, transform 1s;
+  transition: transform 1s;
   position: relative;
 }
 
 .people__person:hover {
   z-index: 2;
-  opacity: 1;
-  cursor: pointer;
   background-color: #eee;
   border-radius: 12px;
-  font-size: 24px;
-  animation: 1s linear forwards scale-card;
+  transform: scale(1.2);
 }
 
 .people__person:hover .person__extra {
   color: #2f4f4f;
-  display: block;
-}
-
-@keyframes scale-card {
-  to {
-    transform: scale(1.2);
-  }
+  opacity: 1;
 }
 /*# sourceMappingURL=css-practise-nov-25-kerekesha.3cc4c8dc.css.map */
