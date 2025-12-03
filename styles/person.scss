@@ -6,8 +6,6 @@
   border-radius: 16px;
 
   &__avatar {
-    width: $width-avatar;
-    height: $height-avatar;
     border-radius: $border-radius-avatar;
   }
 
@@ -32,10 +30,7 @@
     line-height: 32px;
   }
 
-  &__extra {
-    display: none;   
-  }
-
+ 
   &__details {
     text-align: center;
 
@@ -45,9 +40,13 @@
     text-align: center;
   }
 
-    &__name {
-      font-weight: 700;
-      font-size: 20px;
-      display: inline-block;
-    }
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  &__extra {
+    opacity: 0;
+  }
 }

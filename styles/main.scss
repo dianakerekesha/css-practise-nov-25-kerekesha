@@ -15,33 +15,20 @@
     grid-template-columns: repeat(4, 200px);
   }
 
-
   &__person {
     position: relative;
-   
-    transition: opacity 1000ms ease, transform 1000ms ease;
+    transition: transform 1s ease;   
 
     &:hover {
       z-index: 2;
       border-radius: 12px;
       background-color: #EEEEEE;
-      font-size: 24px;
-      opacity: 1;
-      cursor: pointer;
-      animation: scale-card 1s forwards linear;
+      transform: scale(1.2);
 
       .person__extra {
-        display: block;
         color: #2F4F4F;
-      }
-    }
+        opacity: 1;
+      }      
+    }   
   }
-
-}
-
-@keyframes scale-card { 
-  to {
-    transform: scale(1.2);
-  }
-  
 }
